@@ -8,13 +8,26 @@
 Выходные данные
 Выведите ответ на задачу.
 
-Примеры
-Входные данные
+Примеры:
+Входные данные:
 3
 4
-Выходные данные
+Выходные данные:
 5.0
 """
+import math
+def f(a, b):
+    c = a * a + b * b
+    c = math.sqrt(c)
+    return c
+a = int(input())
+b = int(input())
+print(f(a, b))
+
+
+"""
+Another solution: 
+
 import math
 a = int(input())
 b = int(input())
@@ -23,3 +36,4 @@ y = pow(b, 2)
 c = x + y
 ans = math.sqrt(c)
 print(ans)
+"""
